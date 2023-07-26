@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Oswald' ,sans-serif ;
+}
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    transition: 0.3s ease;
+    z-index: 999;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.navbar.scrolled {
+    background-color: #e8e8e8;
+     /* background color when scrolled */
+  }
+ .container{
+    width: 80%;
+    margin: auto;
+}
+.hero{
+    background-image: url(../imgs/heropage.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    min-height: 100vh;
+    margin-bottom:100px;
+}
+.text-show p{
+    width: 100%;
+    text-align: left;
+    color: rgb(32, 32, 32);
+}
+h1{
+    font-size: 6.5em !important;
+}
+h1,h3{
+    color: #0b305b;
+}   
+p{
+    font-size: 1.2em;
+}
+.text{
+    position: relative;
+    top: 120px;
+    width: 50%;
+}
+.show img{
+    position: relative;
+    top: 80px;
+    width: 50%;
+    left: 100px;
+    
+}
+.sections{
+    background-image: url(../imgs/layered-peaks-haikei.svg) ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    min-height: 450px;
+    box-shadow: 3px 5px 5px 2px  #888888;
+    margin-bottom: 70px ;
+    border-radius: 1.5%;
+}
+.sections-wrap{
+    width: 90%;
+    margin:auto;
+    gap :40px;
+
+}
+.sec-imcards{
+    position: relative;
+    
+}
+.sec-imcards img{
+    max-width:300px;
+    margin-top: 5em; 
+}
+.north{
+    position: relative;
+    width: 80%;
+}
+.north .container{
+    width: 90%;
+    margin: auto;
+}
+.north-wrap{
+    width :90%;
+    margin: auto;
+    gap :40px;
+
+}
+.dahab{ 
+    position: relative;
+}
+.hurgada{ 
+    position: relative;
+    z-index: 99;
+
+}
+.card-footer{
+    background-color: white;
+}
+.card-footer input{
+    border:0px grey solid;
+    padding:.3rem .3rem;
+    color:#000;
+}
+.bookbtn button{
+    border: 0px black solid;
+    width: 100%;
+    color: #fff ;
+    background-color: #57C5B6;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+}
+.viewall{
+    padding: 20px;
+    width: 100%;
+    border: #000 0px solid;
+    background-color: white;
+    color: #0b305b ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location{
+    position: relative; 
+    background-image: url('../imgs/card\ 2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 25vh;
+}
+.location::after {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+.loca{
+    position: relative;
+    bottom: -30%;
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    z-index: 5;
+}
+.loca p {
+    font-size: 0.35em;
+}
+.sec-cards{
+    margin-top: 4em; 
+    
+}
+.btnabout{
+    border: black 0px;
+    padding:.8em .8em .8em 0.8em ;
+    font-size: 1.1em;
+    color: #0b305b;
+    background-color: #57C5B6;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.footer1{
+    background-image: url(../imgs/search\ bar.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top:50px ;
+    color: white;
+}
+.email input{
+    width: 80%;
+    border: 0px solid transparent;
+    border-bottom: 1px solid;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.emailtxt{
+    font-size: 1em;
+}
+
+::placeholder{
+    color: white;
+}
+.logos{
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer1-wrap{
+    padding: 1.2em;
+
+}
+.emailbtn{
+    border: 0px solid rgba(0, 0, 0, 0.203);
+    cursor: pointer;
+    position: relative;
+    right: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.023) ;
+}
+
+.footer2{
+    padding: 30px 0px;
+    background-color: #66666640;
+
+}
+.footer2-wrap{
+    width:100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 25px;
+}
+.foot2-container{
+    width: 80%;
+    margin: auto;
+}
+.foot2{
+    width: 33.3%;
+    margin: auto;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+/* mobile */
+
+@media (max-width:799px){
+    .sections-wrap{
+        flex-direction: column-reverse;
+        gap: 0px ;
+    }
+    .sec-cards{
+        margin-top: 20px;
+    }
+    .sec-imcards{
+        padding-top : 25px;
+
+    }
+    .sec-imcards img{
+        max-width: 100%;
+        margin: 0px;
+        
+    }
+    .north-wrap{
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+        gap: 0px;
+    
+    }
+    
+    .north .container{
+        width: 80%;
+        margin: auto;
+    }
+    .north{
+        width: auto;
+    }
+    .location{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about-us .sections-wrap{
+        flex-direction: column;
+        gap: 0px ;
+
+    }
+    .footer1-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .logos{
+        display: none;
+    }
+    .footer2-wrap{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .foot2{
+        width: 100%;
+    }
+}
+@media (max-width:400px){
+
+    .emailbtn{ position: relative;}
+
+}
