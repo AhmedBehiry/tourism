@@ -212,9 +212,6 @@ footer{
 }
 .emailbtn{
     border: 0px solid rgba(0, 0, 0, 0.203);
-    cursor: pointer;
-    position: relative;
-    right: 50px;
     color: white;
     background-color: rgba(0, 0, 0, 0.023) ;
 }
@@ -310,8 +307,9 @@ ul{
         width: 100%;
     }
 }
-@media (max-width:400px){
-
-    .emailbtn{ position: relative;}
-
+@media (max-width:499px){
+    .emailbtn{
+        position:initial;
+    }
+    
 }
