@@ -251,6 +251,14 @@ ul{
 /* mobile */
 
 @media (max-width:799px){
+    .container{
+        margin: auto;
+        width: 95%;
+    }
+    .north .container{
+        margin: auto;
+        width: 95%;
+    }
     .sections-wrap{
         flex-direction: column-reverse;
         gap: 0px ;
